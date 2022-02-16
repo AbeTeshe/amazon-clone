@@ -1,0 +1,97 @@
+.backdrop {
+    width: 400px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+.backdrop__header {
+    background-color: rgb(35, 47, 63);
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.close__button {
+    position: absolute;
+    right: -40px;
+    top: 5px;
+}
+.backdrop__header > h1 {
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+
+}
+.categories {
+    overflow: scroll;
+   
+}
+.categories::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+.person__icon {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;  
+}
+
+.categories h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+    padding-top: 10px;
+}
+.categories h3 span {
+    margin: 20px 40px;
+}
+
+.categories h3:first-child {
+    border-top: none;
+}
+.categories p {
+    font-size: 16x;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.categories p:hover {
+    background-color: lightgray;
+    
+}
+.categories p span {
+    margin: 5px 40px;
+}
+
+.categories p a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 40px;
+}
+
+.arrow__icon {
+    font-size: 14px;
+    font-weight: 400;
+}

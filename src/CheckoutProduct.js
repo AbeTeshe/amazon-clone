@@ -3,7 +3,7 @@ import "./checkoutProduct.css";
 import {Grade } from "@mui/icons-material";
 import { useStateValue } from './StateProvider';
 
-const CheckoutProduct = ({id, image, title, price, rating}) => {
+const CheckoutProduct = ({id, image, title, price, rating, hiddeButton}) => {
     const [state, dispatch] = useStateValue();
     console.log(state);
     
@@ -30,7 +30,7 @@ const CheckoutProduct = ({id, image, title, price, rating}) => {
                     <Grade style={{color: '#f0c14b'}}/>
                 ))}
             </div>
-            <button onClick={removeFromBasket}>Remove from basket</button>
+            {!hiddeButton && <button onClick={removeFromBasket}>Remove from basket</button>}
         </div>
     </div>
   )
